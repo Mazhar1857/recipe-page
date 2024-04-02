@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: min(40.625em, 100%);
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Outfit", sans-serif;
+  color: rgba(106, 103, 100, 1);
+  font-size: 0.95em;
+}
+
+img {
+  width: 100%;
+  /* border-top-left-radius: 1em;
+  border-top-right-radius: 1em; */
+  border-radius: 1em 1em 0 0;
+}
+
+span {
+  font-weight: 600;
+  color: rgba(59, 57, 55, 1);
+}
+
+.heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: rgba(122, 66, 50, 1);
+}
+
+hr {
+  margin: 1.5em 0;
+  border-top: 1px solid rgba(225, 225, 225, 1);
+}
+
+.primary-heading {
+  margin: 0.75em 0;
+  color: rgba(55, 55, 52, 1);
+  font-size: 2em;
+  font-weight: 500;
+  /* font-style: normal; */
+
+}
+
+.secondary-heading {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.75;
+}
+
+.preparation-time {
+  padding: 1.5em;
+  background-color: rgba(255, 247, 252, 1);
+  border-radius: 1em;
+}
+
+ul {
+  margin-top: 0.75em;
+  line-height: 1.75;
+}
+
+ol {
+  margin-top: 0.75em;
+  line-height: 1.75;
+}
+
+li {
+  padding-left: 1em;
+
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  /*if we not give collapse propert then we can't added border below tr*/
+  width: 100%;
+}
+
+
+.nutrition-table tr {
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.nutrition-table tr :nth-child(2) {
+  color: rgba(123, 71, 58, 1);
+  font-weight: 700;
+
+}
+
+.nutrition-table td {
+  padding: 0.5em 0;
+}
+
+@media (min-width:37em) {
+  body {
+    background-color: rgba(243, 229, 216, 1);
+  }
+
+  .container {
+    border-radius: 1.5em;
+    margin: 7em auto;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width:37em) {
+  img {
+    border-radius: 0;
+  }
+
+  .mobile-container {
+    padding: 1.5em;
+  }
+}
